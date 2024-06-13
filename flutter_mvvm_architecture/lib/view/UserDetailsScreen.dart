@@ -47,7 +47,7 @@ class UserDetailsScreen extends StatelessWidget {
                               label: context.resources.strings.labelId + ": "
                             ),
                             MyTextView(
-                              label: user?.id ?? ""
+                              label: user?.userId ?? ""
                             )
                           ],
                         ),
@@ -61,7 +61,7 @@ class UserDetailsScreen extends StatelessWidget {
                               label: context.resources.strings.labelName + ": "
                             ),
                             MyTextView(
-                                label: user?.name ?? ""
+                                label: user?.userName ?? ""
                             )
                           ],
                         ),
@@ -75,7 +75,7 @@ class UserDetailsScreen extends StatelessWidget {
                               label: context.resources.strings.labelNote + ": "
                             ),
                             MyTextView(
-                              label: user?.note ?? ""
+                              label: user?.userNote ?? ""
                             )
                           ],
                         ),
@@ -89,7 +89,7 @@ class UserDetailsScreen extends StatelessWidget {
                               label: context.resources.strings.labelPhone + ": "
                             ),
                             MyTextView(
-                              label: user?.phone ?? ""
+                              label: user?.userPhone ?? ""
                             )
                           ],
                         ),

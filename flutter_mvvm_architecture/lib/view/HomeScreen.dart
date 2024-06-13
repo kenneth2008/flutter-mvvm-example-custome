@@ -83,15 +83,15 @@ class _HomeScreenState extends State<HomeScreen> {
         //   borderRadius: BorderRadius.circular(
         //       context.resources.dimension.imageBorderRadius),
         // ),
-        title: MyTextView(label: item.name ?? "NA"),
+        title: MyTextView(label: item.userName ?? "NA"),
         subtitle: Column(children: [
           Align(
             alignment: Alignment.centerLeft,
-            child: MyTextView(label: item.note ?? "NA"),
+            child: MyTextView(label: item.userNote ?? "NA"),
           ),
           Align(
             alignment: Alignment.centerLeft,
-            child: MyTextView(label: item.phone ?? "NA"),
+            child: MyTextView(label: item.userPhone ?? "NA"),
           ),
         ]),
         onTap: () {

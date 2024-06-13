@@ -29,29 +29,29 @@ class UserModel {
 
 class User {
   User({
-    this.id = "",
-    this.name = "",
-    this.phone = "",
-    this.note = "",
+    this.userId = "",
+    this.userName = "",
+    this.userPhone = "",
+    this.userNote = "",
   });
 
-  String id;
-  String name;
-  String phone;
-  String note;
+  String? userId;
+  String? userName;
+  String? userPhone;
+  String? userNote;
 
   factory User.fromJson(Map<String, dynamic> json) => User(
-    id: json["id"],
-    name: json["name"],
-    phone: json["phone"],
-    note: json["note"],
+    userId: "${json["userId"]}",
+    userName: json["userName"],
+    userPhone: json["userPhone"],
+    userNote: json["userNote"],
   );
 
   Map<String, dynamic> toJson() => {
-    "id": id,
-    "name": name,
-    "phone": phone,
-    "note": note,
+    "userId": userId,
+    "userName": userName,
+    "userPhone": userPhone,
+    "userNote": userNote,
   };
 
 }

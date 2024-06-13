@@ -11,6 +11,9 @@ class NetworkApiService extends BaseApiService {
     dynamic responseJson;
     try {
       final response = await http.get(Uri.parse(BASE_URL + url));
+      print("test");
+
+      print(response.body);
       responseJson = returnResponse(response);
     } on SocketException {
       throw FetchDataException('No Internet Connection');
